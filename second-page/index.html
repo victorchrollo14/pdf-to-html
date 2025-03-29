@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>page 2</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        width: 100%;
+        min-height: 100vh;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .content-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .content-area {
+        border: 1px solid black;
+        min-height: 100vh;
+        width: 1000px;
+      }
+      .header-row {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9em;
+        margin-bottom: 10px;
+      }
+
+      .section1 input {
+        border: none;
+        border-bottom: 1px dashed #333;
+        outline: none;
+      }
+
+      .section1 label {
+        font-size: large;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="content-container">
+      <div class="content-area relative py-[40px] px-[100px]">
+        <header>
+          <div class="header-row section1">
+            <div>
+              <label>NAME</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>CLASS</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>DATE</label>
+              <input type="text" />
+            </div>
+          </div>
+          <div class="my-4 flex flex-row gap-4 items-center justify-center">
+            <h1 class="font-black text-2xl text-[#00499c]">Was kaufe ich?</h1>
+            <div class="flex-1 h-5 w-full bg-[#00499c]"></div>
+            <h1 class="font-black text-xl text-[#00499c]">LEKTION 2</h1>
+          </div>
+        </header>
+
+        <section class="first-section">
+          <div class="pb-6 pt-3 bg-white mx-auto">
+            <!-- Header -->
+            <div class="flex items-center space-x-2">
+              <div
+                class="bg-fuchsia-800 text-white text-lg font-bold px-6 py-1 rounded-md"
+              >
+                MEINE VOKABELN
+              </div>
+            </div>
+
+            <!-- Section Title -->
+            <div class="mt-4">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="bg-fuchsia-800 text-white font-bold rounded-full w-6 h-6 flex items-center justify-center"
+                >
+                  1
+                </div>
+                <h2 class="text-fuchsia-800 font-bold text-lg">GESCHENKE</h2>
+              </div>
+            </div>
+
+            <!-- Instruction -->
+            <p class="mt-2 px-8">
+              <span class="font-bold">Listen to</span> Marc and Anna speaking
+              about a gift for Noah.
+            </p>
+
+            <!-- Questions -->
+            <div class="mt-4 px-8 space-y-4 text-gray-800">
+              <p>
+                <span class="font-bold">a.</span> Über welche drei Geschenke
+                sprechen Marc und Anna?
+              </p>
+              <div class="border-b border-dashed border-gray-400 w-full"></div>
+
+              <p>
+                <span class="font-bold">b.</span> Was kaufen Marc und Anna am
+                Ende?
+              </p>
+              <div class="border-b border-dashed border-gray-400 w-full"></div>
+
+              <div class="flex flex-row gap-4">
+                <div>
+                  <span class="font-bold">c.</span>
+                  <span>Warum kaufen sie das Geschenk?</span>
+                </div>
+                <div class="border-b flex flex-row gap-64 border-dashed">
+                  <span class="text-blue-600">Sie kaufen ...</span>
+                  <span class="text-blue-600 mr-8">denn ...</span>
+                </div>
+              </div>
+              <div
+                class="border-b border-dashed border-gray-400 mt-8 w-full"
+              ></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-2">
+          <div class="bg-white max-w-3xl mx-auto">
+            <!-- Header -->
+            <div class="flex items-center space-x-2">
+              <div
+                class="bg-fuchsia-800 text-white font-bold rounded-full w-6 h-6 flex items-center justify-center"
+              >
+                2
+              </div>
+              <h2 class="text-fuchsia-800 font-bold text-lg">PREISE NENNEN</h2>
+            </div>
+
+            <!-- Subheading -->
+            <p class="mt-2 px-8">
+              <strong>A. Read</strong> the following conversation.
+            </p>
+
+            <div class="flex relative flex-col md:flex-row mt-4 pl-8">
+              <!-- Left: Conversation Box -->
+              <div
+                class="bg-[#fcedec] leading-loose w-full pl-8 py-5 rounded-3xl text-gray-800 shadow flex-1"
+              >
+                <p class="">
+                  Klara aus Berlin will ein Souvenir für ihre Schwester kaufen.
+                </p>
+
+                <p>
+                  <span class="font-bold">Klara:</span> Ich möchte gern ein
+                  T-Shirt mit „I love Zürich“ in Größe S.
+                </p>
+                <p>
+                  <span class="font-bold">Verkäufer:</span> Gut – wie findest du
+                  das weiße hier? Es kostet 33 Franken.
+                </p>
+                <p><span class="font-bold">K:</span> Oh, das ist aber teuer.</p>
+                <p>
+                  <span class="font-bold">V:</span> Dieses hier kostet nur 18
+                  Franken. Aber wir haben nur die Größe L.
+                </p>
+                <p class="mt-2 max-w-lg leading-tight">
+                  <span class="font-bold">K:</span> Das passt nicht. Ich möchte
+                  auch kein gelbes T-Shirt. Es ist nicht so schön. Ich möchte
+                  ein T-Shirt in Schweizer Farben: Rot und Weiß.
+                </p>
+                <p class="mt-2 max-w-lg leading-tight">
+                  <span class="font-bold">V:</span> Ah ja, wir haben rote
+                  T-Shirts mit 20% Rabatt. Das kostet nicht 27 Franken, es
+                  kostet jetzt nur 21,60 Franken. Wir haben es auch in Größe S.
+                </p>
+                <p>
+                  <span class="font-bold">K:</span> Das ist super. Das nehme
+                  ich.
+                </p>
+                <p>
+                  <span class="font-bold">V:</span> Ja, gerne, das macht dann
+                  21,60 Franken.
+                </p>
+                <p><span class="font-bold">K:</span> Gut, ich zahle bar.</p>
+              </div>
+
+              <!-- right: images part -->
+              <img
+                src="./images/white-shirt.png"
+                alt="Image 1"
+                class="w-auto h-44 absolute -top-20 -right-5"
+              />
+              <img
+                src="./images/yellow-shirt.png"
+                alt="Image 1"
+                class="w-auto h-44 object-cover absolute top-28 -right-20"
+              />
+              <img
+                src="./images/red-shirt.png"
+                alt="Image 1"
+                class="w-auto h-44 object-cover absolute -bottom-3 right-8"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="p-6 bg-white max-w-3xl mx-auto">
+            <!-- Subheading -->
+            <p class="mt-2 text-lg">
+              <strong>B. Decide</strong> if the following sentences are true or
+              false <span class="font-bold">drawing an X</span> on (<span
+                class="font-bold"
+                >T</span
+              >) or (<span class="font-bold">F</span>).
+            </p>
+
+            <!-- Questions -->
+            <div class="mt-4 px-8 space-y-1">
+              <!-- Question 1 -->
+              <div class="flex items-center">
+                <span class="font-bold">1.</span>
+                <p class="ml-2 mx-4">Das gelbe T-Shirt ist günstig.</p>
+                <button class="border border-gray-500 px-3 py-1 rounded">
+                  T
+                </button>
+                <button class="border border-gray-500 px-3 py-1 rounded ml-2">
+                  F
+                </button>
+              </div>
+
+              <!-- Question 2 -->
+              <div class="flex items-center">
+                <span class="font-bold">2.</span>
+                <p class="ml-2 mx-4">Klara möchte ein rot-weißes T-Shirt.</p>
+                <button class="border border-gray-500 px-3 py-1 rounded">
+                  T
+                </button>
+                <button class="border border-gray-500 px-3 py-1 rounded ml-2">
+                  F
+                </button>
+              </div>
+
+              <!-- Question 3 -->
+              <div class="flex items-center">
+                <span class="font-bold">3.</span>
+                <p class="ml-2 mx-4">Das rote T-Shirt kostet 27 Franken.</p>
+                <button class="border border-gray-500 px-3 py-1 rounded">
+                  T
+                </button>
+                <button class="border border-gray-500 px-3 py-1 rounded ml-2">
+                  F
+                </button>
+              </div>
+
+              <!-- Question 4 -->
+              <div class="flex items-center">
+                <span class="font-bold">4.</span>
+                <p class="ml-2 mx-4">Klara zahlt mit Kreditkarte.</p>
+                <button
+                  class="border text-gray-400 font-bold border-gray-500 px-3 py-1 rounded"
+                >
+                  T
+                </button>
+                <button class="border border-gray-500 px-3 py-1 rounded ml-2">
+                  F
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="absolute bottom-80 rotate-270 right-0">
+          <div class="text-[10px] text-gray-600">
+            Copyright © by Difusión, S. L.
+          </div>
+        </section>
+
+        <section
+          class="absolute -left-10 bottom-32 rotate-90 px-4 pb-8 pt-2 bg-[#00499c] side-note rounded-t-[20px] text-white"
+        >
+          <div class="font-bold text-2xl">KAPITEL 6</div>
+        </section>
+        <footer class="flex justify-between text-xs">
+          <div><strong>138</strong> | hundertachtunddreißig</div>
+          <div>Das Reporterteam 1</div>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
