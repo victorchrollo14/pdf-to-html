@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <style>
+    body {
+      width: 100%;
+      min-height: 100vh;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .content-container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content-area {
+      border: 1px solid black;
+      min-height: 100vh;
+      width: 1000px;
+    }
+
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+
+    .section1 input {
+      border: none;
+      border-bottom: 1px dashed #333;
+      outline: none;
+    }
+
+    .section1 label {
+      font-size: large;
+      font-weight: bold;
+    }
+
+    .section1 h1 {
+      font-weight: bolder;
+    }
+  </style>
+  <body>
+    <main class="content-container">
+      <div class="content-area relative py-[40px] px-[100px]">
+        <header>
+          <div class="header-row section1">
+            <div>
+              <label>NAME</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>CLASS</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>DATE</label>
+              <input type="text" />
+            </div>
+          </div>
+          <div class="my-4 flex flex-row gap-4 items-center justify-center">
+            <h1 class="font-black text-2xl text-gray-500">Das ABC</h1>
+            <div class="flex-1 h-5 w-full bg-gray-500"></div>
+          </div>
+        </header>
+
+        <section class="section2 my-10">
+          <div class="section-2-header flex flex-row gap-4 items-center">
+            <div
+              class="bg-gray-500 text-white rounded-full h-10 w-10 px-4 text-xl font-bold flex justify-center items-center"
+            >
+              5
+            </div>
+            <div class="text-xl">
+              <strong>A. Listen to</strong> these words.
+              <strong>Combine</strong> the words and the sounds you hear and
+              <strong>say</strong>
+              them aloud. Then <strong>listen</strong> again and
+              <strong>check</strong>.
+            </div>
+          </div>
+          <div class="flex flex-col px-14 mt-8">
+            <table
+              class="border-separate border-spacing-x-0 w-full border border-black text-left"
+            >
+              <thead>
+                <tr class="bg-orange-800 text-white border-r border-white">
+                  <th class="px-4 py-1 border-r border-white font-bold">
+                    write
+                  </th>
+                  <th class="px-4 py-1 font-bold border-r border-white">
+                    hear / speak
+                  </th>
+                  <th class="px-4 py-1 font-bold">write</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="px-4 py-2 border-r border-red-700">
+                    L<b class="bg-yellow-200">ie</b>be
+                  </td>
+                  <td class="px-4 py-2 border-r border-red-700"></td>
+                  <td class="px-4 py-2"><b class="bg-yellow-200">Eu</b>ropa</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-2 border-r border-red-700">
+                    <b class="bg-yellow-200">Ei</b>inst
+                    <b class="bg-yellow-200">ei</b>n
+                  </td>
+                  <td class="px-4 py-2 border-r border-red-700">
+                    like the English letter „i” as in “life”
+                  </td>
+                  <td class="px-4 py-2">B<b class="bg-yellow-200">ie</b>ne</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-2 border-r border-red-700">
+                    M<b class="bg-yellow-200">äu</b>se
+                  </td>
+                  <td class="px-4 py-2 border-r border-red-700">
+                    like the English letters „ee” as in “<b>bee</b>”
+                  </td>
+                  <td class="px-4 py-2">zw<b class="bg-yellow-200">ei</b></td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-2 border-r border-red-700">
+                    m<b class="bg-yellow-200">ei</b>n
+                  </td>
+                  <td class="px-4 py-2 border-r border-red-700">
+                    like the English letters „oy” as in “<b>toy</b>”
+                  </td>
+                  <td class="px-4 py-2">
+                    D<b class="bg-yellow-200">eu</b>tsch
+                  </td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-2 border-r border-red-700"></td>
+                  <td class="px-4 py-2 border-r border-red-700"></td>
+                  <td class="px-4 py-2">W<b class="bg-yellow-200">ie</b>n</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div>
+              <h1 class="flex flex-col mt-4 text-lg">
+                <span
+                  ><b>B. Classify</b> the words in the corresponding
+                  columns.</span
+                >
+                <span class="ml-5">
+                  <b>Highlight</b> the three sounds with different colors.
+                </span>
+              </h1>
+            </div>
+
+            <table
+              class="border-separate mt-5 border-spacing-x-0 w-full border border-black text-left"
+            >
+              <thead>
+                <tr class="bg-orange-800 text-white border-r border-white">
+                  <th class="px-4 py-1 border-r border-white font-bold">IE</th>
+                  <th class="px-4 py-1 font-bold border-r border-white">
+                    EU / ÄU
+                  </th>
+                  <th class="px-4 py-1 font-bold">IE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="h-32">
+                  <td class="px-4 py-2 border-r border-red-700"></td>
+                  <td class="px-4 py-2 border-r border-red-700"></td>
+                  <td class="px-4 py-2"></td>
+                </tr>
+              </tbody>
+            </table>
+            <div>
+              <h1 class="flex flex-col mt-4 text-lg">
+                <span><b>C. Listen</b> again and <b>read</b> the words </span>
+              </h1>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-6">
+          <div class="section-2-header flex flex-row gap-4 items-center">
+            <div
+              class="bg-gray-500 text-white rounded-full h-8 w-8   font-bold flex justify-center items-center"
+            >
+              6
+            </div>
+            <div class="text-xl">
+              <b>A. Listen</b> and <b>mark</b> the names you hear.
+            </div>
+          </div>
+          <div class="grid  mt-4 px-14 grid-cols-2 gap-6">
+            <div ">
+              <p>
+                <b>1.</b> Wein <input type="checkbox" class="w-6 h-6 mx-2" /> /
+                Wien <input type="checkbox" class="w-6 h-6 mx-2" />
+              </p>
+              <p>
+                <b>2.</b> Österreich
+                <input type="checkbox" class="w-6 h-6 mx-2" /> / Osterreich
+                <input type="checkbox" class="w-6 h-6 mx-2" />
+              </p>
+              <p>
+                <b>3.</b> Zürich
+                <input type="checkbox" class="w-6 h-6 mx-2" /> / Zurich
+                <input type="checkbox" class="w-6 h-6 mx-2" />
+              </p>
+            </div>
+            <div>
+              <p>
+                <b>4.</b> die Schwiez
+                <input type="checkbox" class="w-6 h-6 mx-2" /> / Schweiz
+                <input type="checkbox" class="w-6 h-6 mx-2" />
+              </p>
+              <p>
+                <b>5.</b> Hâmburg
+                <input type="checkbox" class="w-6 h-6 mx-2" /> / Hamburg
+                <input type="checkbox" class="w-6 h-6 mx-2" />
+              </p>
+              <p>
+                <b>6.</b> Deitschland
+                <input type="checkbox" class="w-6 h-6 mx-2" /> / Deutschland
+                <input type="checkbox" class="w-6 h-6 mx-2" />
+              </p>
+            </div>
+          </div>
+          <div class="px-14 mt-10">
+             <div class="text-lg">
+                <b>B. Write</b> the names of the three cities from A under the pictures.
+             </div>
+          </div>
+         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-14 mt-8">
+    <div class="bg-white rounded-lg shadow-lg h-fit ">
+        <img src="./images/wheel.png" alt="Vienna" class="rounded-t-lg">
+        <p class="  border-4 py-2 px-2 border-gray-300"><b>a.</b> Das ist W<span class="text-gray-400"> ..........</span>.</p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg ">
+        <img src="./images/london.png" alt="Zurich" class="rounded-t-lg">
+        <p class="  border-4 py-2 px-2 border-gray-300 "><b>b.</b> Das ist Z<span class="text-gray-400"> ..............</span>.</p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg h-fit">
+        <img src="./images/wheel.png" alt="Hamburg" class="rounded-t-lg">
+        <p class="  border-4 py-2 px-2 border-gray-300 "><b>c.</b> Das ist H<span class="text-gray-400"> ..............</span>.</p>
+    </div>
+</div>
+        </section>
+
+            <footer class="mt-8 flex justify-between text-xs">
+              <div>Das Reporterteam 1</div>
+              <div>  sieben | <strong>7</strong></div>
+            </footer>
+        <section
+          class="absolute -right-13 top-32 rotate-270 px-4 pb-8 pt-2 bg-gray-500 side-note rounded-t-[20px] text-white"
+        >
+          <div class="font-bold text-2xl">LOS GEHT’S!</div>
+        </section>
+
+          <section class="absolute bottom-80 rotate-270 left-0">
+            <div class="text-[10px] text-gray-600">
+              Copyright © by Difusión, S. L.
+            </div>
+          </section>
+
+      </div>
+    </main>
+  </body>
+</html>
